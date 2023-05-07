@@ -43,7 +43,7 @@ export default function Login() {
         email: "",
         password: "",
       });
-      navigate(-1);
+      navigate("/profile");
     } catch (error) {
       toast(error.code, { type: "error" });
       setData({ ...data });
@@ -125,7 +125,7 @@ export default function Login() {
         <GoogleButton 
             onClick={() =>
               signInWithGoogle()
-              .then(navigate(-1))
+              .then(navigate("/profile"))
               .catch(e => console.log(e.message))}
             type="light"
             style={{ width: '100%' }}>

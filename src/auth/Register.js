@@ -156,7 +156,7 @@ export default function Register() {
           <GoogleButton 
               onClick={() => {
                 signInWithGoogle()
-                .then(navigate(-1))
+                .then(navigate("/profile"))
                 .catch(e => console.log(e.message))}}
               type="light"
               label="Sign up with Google"

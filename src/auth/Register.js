@@ -165,7 +165,7 @@ export default function Register() {
           <div>
               <p style={{textAlign: 'center', marginTop: '2em'}}>
                   Already have an account?
-                <Link to='/login' style={{marginLeft: '10px'}}>
+                <Link to='/' style={{marginLeft: '10px'}}>
                   Login
                 </Link>
               </p>
